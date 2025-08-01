@@ -18,6 +18,18 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+				'opensans': ['Open Sans', 'sans-serif'],
+				'montserrat': ['Montserrat', 'sans-serif'],
+			},
+			fontSize: {
+				'hero': ['48px', { lineHeight: '1.2' }],
+				'heading': ['32px', { lineHeight: '1.3' }],
+				'body': ['18px', { lineHeight: '1.6' }],
+				'quote': ['20px', { lineHeight: '1.5' }],
+				'quote-lg': ['24px', { lineHeight: '1.5' }],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

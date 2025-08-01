@@ -102,15 +102,43 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+  }
+
+  h1 {
+    @apply text-hero;
+  }
+
+  h2 {
+    @apply text-heading;
   }
 
   .accent-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+  }
+
+  .quote-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    @apply text-quote;
+  }
+
+  .quote-text-lg {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    @apply text-quote-lg;
+  }
+
+  .btn-primary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
   }
 }
