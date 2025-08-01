@@ -95,7 +95,7 @@ const WhySection = () => {
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
                     <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600" />
                   </div>
-                  <h3 className="font-semibold text-slate-900 text-base sm:text-lg">beginning</h3>
+                  <h3 className="font-semibold text-slate-900 text-base sm:text-lg">Beginning</h3>
                 </div>
                 <p className="text-slate-600 text-sm lg:text-base leading-relaxed pl-11 sm:pl-13 pb-2">
                   It all started with Articuleren, my edtech initiative helping students have better learning through experiential learning. I built it from scratch to help learners communicate better, wearing every hat: product, content, design, and growth. That's where I learned to turn ideas into working products.

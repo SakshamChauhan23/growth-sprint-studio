@@ -22,7 +22,6 @@ const Index = () => {
       <WhyMe />
       <CTAButton className="py-12 sm:py-16 bg-white" variant="secondary" />
       <Testimonials />
-      <CTA />
       <Footer />
     </div>
   );
