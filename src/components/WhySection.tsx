@@ -61,6 +61,24 @@ const WhySection = () => {
                       <div className="text-xl lg:text-2xl font-bold text-slate-900">2 Weeks</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Sprint Duration</div>
                     </div>
+                    <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-3 lg:p-4 border border-green-200">
+                      <div className="flex items-center justify-center mb-1">
+                        <svg className="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                      </div>
+                      <div className="text-xl lg:text-2xl font-bold text-slate-900">50+</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wide">Teams Helped</div>
+                    </div>
+                    <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-3 lg:p-4 border border-purple-200">
+                      <div className="flex items-center justify-center mb-1">
+                        <svg className="w-4 h-4 text-purple-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <div className="text-xl lg:text-2xl font-bold text-slate-900">95%</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wide">Success Rate</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -70,10 +88,10 @@ const WhySection = () => {
             <div className="lg:col-span-2 space-y-6 lg:space-y-6 order-2 lg:order-2">
               {/* Desktop Intro Text */}
               <div className="hidden lg:block bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-                <p className="text-lg lg:text-xl text-slate-700 leading-relaxed mb-4">
+                <p className="text-base lg:text-lg text-slate-700 leading-relaxed mb-4">
                   I'm Saksham. Those early lessons shaped how I work today.
                 </p>
-                <p className="text-lg lg:text-xl text-slate-700 leading-relaxed">
+                <p className="text-base lg:text-lg text-slate-700 leading-relaxed">
                   Most teams don't need more people or bloated processes; they need sharper direction, better systems, and someone who bridges the gap between strategy and execution.
                 </p>
               </div>
