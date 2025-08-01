@@ -1,10 +1,13 @@
 import { ArrowLeft, Target, TrendingUp, Users, Zap, BarChart3, Globe, Settings, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import CTAButton from "@/components/CTAButton";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const RainesDevCaseStudy = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Navbar />
       {/* Header */}
       <div className="bg-white border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -288,6 +291,7 @@ const RainesDevCaseStudy = () => {
           text="Start Your Growth Sprint"
         />
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,9 +1,13 @@
 import { ArrowLeft, ExternalLink, Target, TrendingUp, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import CTAButton from "@/components/CTAButton";
 
 const StrutishCaseStudy = () => {
   return (
     <div className="min-h-screen bg-slate-50">
+      <Navbar />
       {/* Header */}
       <div className="bg-white border-b">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -278,6 +282,7 @@ const StrutishCaseStudy = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

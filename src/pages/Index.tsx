@@ -1,4 +1,6 @@
 
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import WhySection from "@/components/WhySection";
 import WhatIDo from "@/components/WhatIDo";
@@ -11,6 +13,7 @@ import CTAButton from "@/components/CTAButton";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Navbar />
       <Hero />
       <WhySection />
       <WhatIDo />
@@ -20,6 +23,7 @@ const Index = () => {
       <CTAButton className="py-12 sm:py-16 bg-white" variant="secondary" />
       <Testimonials />
       <CTA />
+      <Footer />
     </div>
   );
 };

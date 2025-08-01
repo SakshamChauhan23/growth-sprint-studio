@@ -1,0 +1,121 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-slate-900 text-white">
+      {/* CTA Section */}
+      <div className="border-b border-slate-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Ready to Scale Your Business?
+            </h2>
+            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+              Let's discuss how we can help you achieve sustainable growth with data-driven strategies.
+            </p>
+            <Button 
+              size="lg" 
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            >
+              Start Your 2-Week Growth Sprint
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer Content */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="md:col-span-2">
+            <div className="bg-white text-slate-900 px-3 py-1 rounded-lg font-bold text-lg w-fit mb-4">
+              Logo
+            </div>
+            <p className="text-slate-300 mb-6 max-w-md">
+              We help businesses scale with data-driven strategies, optimized funnels, and growth-focused solutions.
+            </p>
+            <div className="space-y-2">
+              <div className="flex items-center gap-3 text-slate-300">
+                <Mail className="w-4 h-4" />
+                <span>hello@company.com</span>
+              </div>
+              <div className="flex items-center gap-3 text-slate-300">
+                <Phone className="w-4 h-4" />
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div className="flex items-center gap-3 text-slate-300">
+                <MapPin className="w-4 h-4" />
+                <span>San Francisco, CA</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold text-white mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/" className="text-slate-300 hover:text-white transition-colors">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/case-studies" className="text-slate-300 hover:text-white transition-colors">
+                  Case Studies
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-slate-300 hover:text-white transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="text-slate-300 hover:text-white transition-colors">
+                  Services
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h4 className="font-semibold text-white mb-4">Services</h4>
+            <ul className="space-y-2">
+              <li>
+                <span className="text-slate-300">Growth Strategy</span>
+              </li>
+              <li>
+                <span className="text-slate-300">Product Positioning</span>
+              </li>
+              <li>
+                <span className="text-slate-300">Funnel Optimization</span>
+              </li>
+              <li>
+                <span className="text-slate-300">Digital Marketing</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-slate-400 text-sm">
+            © 2024 Company Name. All rights reserved.
+          </p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="/privacy" className="text-slate-400 hover:text-white text-sm transition-colors">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="text-slate-400 hover:text-white text-sm transition-colors">
+              Terms of Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
