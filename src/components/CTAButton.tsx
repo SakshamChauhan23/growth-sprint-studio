@@ -15,7 +15,7 @@ const CTAButton = ({
   const isPrimary = variant === "primary";
   
   return (
-    <div className={`text-center ${className}`}>
+    <div className={`text-center pt-10 ${className}`}>
       <Button 
         size="lg" 
         className={`${isPrimary 

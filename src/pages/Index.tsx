@@ -14,10 +14,10 @@ const Index = () => {
       <Hero />
       <WhySection />
       <WhatIDo />
-      <CTAButton className="py-16 bg-slate-50" />
+      <CTAButton className="py-12 sm:py-16 bg-slate-100" />
       <WhoIWorkWith />
       <WhyMe />
-      <CTAButton className="py-16" variant="secondary" />
+      <CTAButton className="py-12 sm:py-16 bg-white" variant="secondary" />
       <Testimonials />
       <CTA />
     </div>
