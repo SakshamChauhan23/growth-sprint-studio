@@ -27,7 +27,7 @@ const CaseStudies = () => {
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
               <div className="bg-white rounded-lg p-4 flex-shrink-0">
                 <img 
-                  src="/lovable-uploads/440477ec-5c8b-47c9-90a8-c726970a715f.png" 
+                  src="/lovable-uploads/9c78e6dd-dc89-4095-ac6b-531b60f1e1b8.png" 
                   alt="SocialRipple Logo"
                   className="h-12 w-auto"
                 />
@@ -83,7 +83,7 @@ const CaseStudies = () => {
             <section className="mb-12">
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/053a4c25-3f66-4a1d-82e3-d357acdae20f.png" 
+                  src="/lovable-uploads/b1372160-9e1e-467d-8566-04fee9e3ab67.png" 
                   alt="SocialRipple Dashboard Preview"
                   className="w-full h-auto"
                 />
