@@ -12,6 +12,16 @@ const CaseStudiesListing = () => {
       services: ["Product Positioning", "Go-To-Market Strategy", "Content-Led Growth", "Lead Generation", "Product Development"],
       results: "520+ waitlist sign-ups during pre-launch campaigns",
       slug: "/case-studies/socialripple"
+    },
+    {
+      id: "strutish",
+      title: "Strutish",
+      industry: "D2C Fashion • Streetwear",
+      description: "Scaled a D2C streetwear brand by optimizing conversion funnels and targeting anime/meme culture enthusiasts",
+      image: "/lovable-uploads/b0aa9c0b-9905-4b39-af7c-5ad9a9f4aa34.png",
+      services: ["Brand Strategy", "Marketing Optimization", "E-commerce Funnel Setup", "Creative Campaigns"],
+      results: "300+ orders shipped with 2x conversion rate improvement",
+      slug: "/case-studies/strutish"
     }
   ];
 
@@ -38,7 +48,7 @@ const CaseStudiesListing = () => {
           {caseStudies.map((study) => (
             <div key={study.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               {/* Company Logo */}
-              <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-8">
+              <div className={`px-6 py-8 ${study.id === 'socialripple' ? 'bg-gradient-to-r from-blue-600 to-blue-700' : 'bg-gradient-to-r from-slate-800 to-slate-900'}`}>
                 <div className="bg-white rounded-lg p-3 w-fit">
                   <img 
                     src={study.image} 
@@ -92,7 +102,7 @@ const CaseStudiesListing = () => {
           ))}
 
           {/* Placeholder cards for future case studies */}
-          {[1, 2].map((index) => (
+          {[1].map((index) => (
             <div key={`placeholder-${index}`} className="bg-white rounded-2xl shadow-lg overflow-hidden opacity-50">
               <div className="bg-gradient-to-r from-slate-400 to-slate-500 px-6 py-8">
                 <div className="bg-white rounded-lg p-3 w-fit">
