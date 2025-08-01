@@ -71,7 +71,7 @@ const WhySection = () => {
                     <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
                       <Target className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
                     </div>
-                    <h3 className="font-semibold text-slate-900 text-sm sm:text-base">What do I see?</h3>
+                    <h3 className="font-semibold text-slate-900 text-sm sm:text-base">The Pattern I Saw</h3>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed pl-11 sm:pl-13">
                     In other lean teams, great ideas stalled because of unclear roadmaps, manual busywork, or a lack of focus on execution.

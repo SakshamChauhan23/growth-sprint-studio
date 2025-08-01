@@ -19,7 +19,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            I help lean teams move from stuck to scaling with clear direction and fast execution.
+            I help lean teams turn messy roadmaps and stalled growth into products shipped and results delivered fast.
           </p>
           
           <Button 
