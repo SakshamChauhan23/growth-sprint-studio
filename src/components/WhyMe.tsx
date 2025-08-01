@@ -154,7 +154,10 @@ const WhyMe = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-100">
-                    <td className="p-6 text-gray-900 font-medium">Direct, 1:1 Work</td>
+                    <td className="p-6 text-gray-900 font-medium">
+                      <div>Direct, 1:1 Work</div>
+                      <div className="text-sm text-gray-500 mt-1">Personal attention, not team delegation</div>
+                    </td>
                     <td className="p-6 text-center">
                       <X className="h-6 w-6 text-red-500 mx-auto" />
                     </td>
@@ -166,7 +169,10 @@ const WhyMe = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-gray-100">
-                    <td className="p-6 text-gray-900 font-medium">Fast Execution</td>
+                    <td className="p-6 text-gray-900 font-medium">
+                      <div>Fast Execution</div>
+                      <div className="text-sm text-gray-500 mt-1">Deliver in weeks, not months</div>
+                    </td>
                     <td className="p-6 text-center">
                       <X className="h-6 w-6 text-red-500 mx-auto" />
                     </td>
@@ -178,7 +184,10 @@ const WhyMe = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-gray-100">
-                    <td className="p-6 text-gray-900 font-medium">Hands-on Implementation</td>
+                    <td className="p-6 text-gray-900 font-medium">
+                      <div>Hands-on Implementation</div>
+                      <div className="text-sm text-gray-500 mt-1">I build systems alongside you, not just advise</div>
+                    </td>
                     <td className="p-6 text-center">
                       <X className="h-6 w-6 text-red-500 mx-auto" />
                     </td>
@@ -190,7 +199,10 @@ const WhyMe = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-gray-100">
-                    <td className="p-6 text-gray-900 font-medium">Clear Roadmaps</td>
+                    <td className="p-6 text-gray-900 font-medium">
+                      <div>Clear Roadmaps</div>
+                      <div className="text-sm text-gray-500 mt-1">Simple frameworks that teams can execute</div>
+                    </td>
                     <td className="p-6 text-center">
                       <div className="flex flex-col items-center">
                         <Check className="h-6 w-6 text-green-500 mb-1" />
@@ -211,7 +223,10 @@ const WhyMe = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-gray-100">
-                    <td className="p-6 text-gray-900 font-medium">Custom-Tailored Solutions</td>
+                    <td className="p-6 text-gray-900 font-medium">
+                      <div>Custom-Tailored Solutions</div>
+                      <div className="text-sm text-gray-500 mt-1">Built specifically for your team's workflow</div>
+                    </td>
                     <td className="p-6 text-center">
                       <div className="flex flex-col items-center">
                         <X className="h-6 w-6 text-red-500 mb-1" />
@@ -232,7 +247,10 @@ const WhyMe = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-gray-100">
-                    <td className="p-6 text-gray-900 font-medium">Affordable & Lean</td>
+                    <td className="p-6 text-gray-900 font-medium">
+                      <div>Affordable & Lean</div>
+                      <div className="text-sm text-gray-500 mt-1">Fixed sprint pricing, no surprise costs</div>
+                    </td>
                     <td className="p-6 text-center">
                       <div className="flex flex-col items-center">
                         <X className="h-6 w-6 text-red-500 mb-1" />
@@ -253,7 +271,10 @@ const WhyMe = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 text-gray-900 font-medium">Ongoing Support</td>
+                    <td className="p-6 text-gray-900 font-medium">
+                      <div>Ongoing Support</div>
+                      <div className="text-sm text-gray-500 mt-1">Available for questions after delivery</div>
+                    </td>
                     <td className="p-6 text-center">
                       <X className="h-6 w-6 text-red-500 mx-auto" />
                     </td>

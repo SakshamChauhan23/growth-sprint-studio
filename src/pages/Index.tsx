@@ -2,10 +2,11 @@
 import Hero from "@/components/Hero";
 import WhySection from "@/components/WhySection";
 import WhatIDo from "@/components/WhatIDo";
+import WhoIWorkWith from "@/components/WhoIWorkWith";
 import WhyMe from "@/components/WhyMe";
 import Testimonials from "@/components/Testimonials";
-import WhoIWorkWith from "@/components/WhoIWorkWith";
 import CTA from "@/components/CTA";
+import CTAButton from "@/components/CTAButton";
 
 const Index = () => {
   return (
@@ -13,9 +14,11 @@ const Index = () => {
       <Hero />
       <WhySection />
       <WhatIDo />
-      <WhyMe />
-      <Testimonials />
+      <CTAButton className="py-16 bg-slate-50" />
       <WhoIWorkWith />
+      <WhyMe />
+      <CTAButton className="py-16" variant="secondary" />
+      <Testimonials />
       <CTA />
     </div>
   );

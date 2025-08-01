@@ -1,4 +1,3 @@
-
 import { Users, Target, Lightbulb, Rocket } from 'lucide-react';
 
 const WhySection = () => {
@@ -47,48 +46,40 @@ const WhySection = () => {
 
             {/* Story Cards */}
             <div className="lg:col-span-2 space-y-4 lg:space-y-6 order-1 lg:order-2">
-              <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
-                <p className="text-lg lg:text-xl text-slate-700 leading-relaxed">
-                  I'm Saksham, and those early lessons shaped how I work today. Most teams don't need more people or bloated processes; they need sharper direction, better systems, and someone who bridges the gap between strategy and execution.
+              <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border-l-4 border-orange-500">
+                <div className="flex items-start sm:items-center mb-3 lg:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600" />
+                  </div>
+                  <h3 className="font-semibold text-slate-900 text-sm sm:text-base">beginning</h3>
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed pl-11 sm:pl-13">
+                  I'm Saksham, and those early lessons shaped how I work today. It all started with Articuleren, my edtech initiative helping students have better learning through experiential learning. I built it from scratch to help learners communicate better, wearing every hat: product, content, design, and growth. That's where I learned to turn ideas into working products and realized most teams don't need more people or bloated processes; they need sharper direction, better systems, and someone who bridges the gap between strategy and execution.
                 </p>
               </div>
 
-              <div className="grid gap-4 lg:gap-6">
-                <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border-l-4 border-orange-500">
-                  <div className="flex items-start sm:items-center mb-3 lg:mb-4">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                      <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600" />
-                    </div>
-                    <h3 className="font-semibold text-slate-900 text-sm sm:text-base">beginning</h3>
+              <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border-l-4 border-blue-500">
+                <div className="flex items-start sm:items-center mb-3 lg:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <Target className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
                   </div>
-                  <p className="text-slate-600 text-sm leading-relaxed pl-11 sm:pl-13">
-                    It all started with Articuleren, my edtech initiative helping students have better learning through experiential learning. I built it from scratch to help learners communicate better, wearing every hat: product, content, design, and growth. That's where I learned to turn ideas into working products.
-                  </p>
+                  <h3 className="font-semibold text-slate-900 text-sm sm:text-base">The Pattern I Saw</h3>
                 </div>
+                <p className="text-slate-600 text-sm leading-relaxed pl-11 sm:pl-13">
+                  In other lean teams, great ideas stalled because of unclear roadmaps, manual busywork, or a lack of focus on execution.
+                </p>
+              </div>
 
-                <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border-l-4 border-blue-500">
-                  <div className="flex items-start sm:items-center mb-3 lg:mb-4">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                      <Target className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
-                    </div>
-                    <h3 className="font-semibold text-slate-900 text-sm sm:text-base">The Pattern I Saw</h3>
+              <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border-l-4 border-green-500">
+                <div className="flex items-start sm:items-center mb-3 lg:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <Rocket className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
                   </div>
-                  <p className="text-slate-600 text-sm leading-relaxed pl-11 sm:pl-13">
-                    In other lean teams, great ideas stalled because of unclear roadmaps, manual busywork, or a lack of focus on execution.
-                  </p>
+                  <h3 className="font-semibold text-slate-900 text-sm sm:text-base">Now I partner with teams to deliver results</h3>
                 </div>
-
-                <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border-l-4 border-green-500">
-                  <div className="flex items-start sm:items-center mb-3 lg:mb-4">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                      <Rocket className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
-                    </div>
-                    <h3 className="font-semibold text-slate-900 text-sm sm:text-base">Now I partner with teams to deliver results</h3>
-                  </div>
-                  <p className="text-slate-600 text-sm leading-relaxed pl-11 sm:pl-13">
-                    Instead of waiting, I started fixing these problems, mapping features, simplifying processes, and setting up systems that freed up time for real growth. Now, I partner with SaaS founders, e-commerce brands, agencies, and ops-heavy teams to deliver results without extra headcount or complexity.
-                  </p>
-                </div>
+                <p className="text-slate-600 text-sm leading-relaxed pl-11 sm:pl-13">
+                  Instead of waiting, I started fixing these problems, mapping features, simplifying processes, and setting up systems that freed up time for real growth. Now, I partner with SaaS founders, e-commerce brands, agencies, and ops-heavy teams to deliver results without extra headcount or complexity.
+                </p>
               </div>
             </div>
           </div>

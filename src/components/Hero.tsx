@@ -11,7 +11,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
             Turning ideas into products.{" "}
             <span className="bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent">
               Brands into growth.
