@@ -83,12 +83,6 @@ const CaseStudiesListing = () => {
                   </div>
                 </div>
 
-                {/* Key Result */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-slate-900 mb-1">Key Result:</h4>
-                  <p className="text-sm text-green-700 font-medium">{study.results}</p>
-                </div>
-
                 {/* CTA */}
                 <Link
                   to={study.slug}
