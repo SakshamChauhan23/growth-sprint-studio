@@ -16,11 +16,8 @@ const WhySection = () => {
           {/* Mobile Intro Text */}
           <div className="lg:hidden mb-6 sm:mb-8">
             <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-6 mx-2">
-              <p className="text-base text-slate-700 leading-relaxed mb-4">
-                I'm Saksham. Those early lessons shaped how I work today.
-              </p>
               <p className="text-base text-slate-700 leading-relaxed">
-                Most teams don't need more people or bloated processes; they need sharper direction, better systems, and someone who bridges the gap between strategy and execution.
+                Hi, I'm Saksham, your Product & Growth partner.
               </p>
             </div>
           </div>
@@ -88,11 +85,8 @@ const WhySection = () => {
             <div className="lg:col-span-2 space-y-6 lg:space-y-6 order-2 lg:order-2">
               {/* Desktop Intro Text */}
               <div className="hidden lg:block bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-                <p className="text-base lg:text-lg text-slate-700 leading-relaxed mb-4">
-                  I'm Saksham. Those early lessons shaped how I work today.
-                </p>
                 <p className="text-base lg:text-lg text-slate-700 leading-relaxed">
-                  Most teams don't need more people or bloated processes; they need sharper direction, better systems, and someone who bridges the gap between strategy and execution.
+                  Hi, I'm Saksham, your Product & Growth partner.
                 </p>
               </div>
 
