@@ -63,7 +63,7 @@ const WhySection = () => {
               <div className="relative">
                 <div className="w-80 h-80 rounded-lg mx-auto overflow-hidden">
                   <img 
-                    src="/lovable-uploads/9509828b-99de-44d4-adcd-c9f4b73c4e6e.png" 
+                    src="/lovable-uploads/b2f89dab-e169-4505-a629-4530f5989b23.png" 
                     alt="Saksham speaking at an event" 
                     className="w-full h-full object-cover"
                   />
