@@ -13,8 +13,7 @@ const CTA = () => {
           </h2>
           
           <p className="text-xl text-slate-300 mb-12 leading-relaxed">
-            Whether it was mapping a SaaS MVP, fixing an e-commerce funnel, or automating sourcing for a staffing firm—
-            it all began with one bottleneck we solved in under 2 weeks.
+            Whether it was mapping a SaaS MVP, optimising an e-commerce funnel, or automating sourcing for a staffing firm, it all began with one bottleneck that we solved in under two weeks.
           </p>
           
           <p className="text-xl text-slate-300 mb-12">

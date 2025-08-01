@@ -12,16 +12,14 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            I help lean teams turn{" "}
+            Turning ideas into products.{" "}
             <span className="bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent">
-              ideas into products
+              Brands into growth.
             </span>
-            , brands into growth engines, and workflows into time saved.
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            I started as a Product Manager, fixing inefficiencies with modern tools and lean product thinking. 
-            Today, I work with founders and small teams to do the same faster, simpler, and with measurable impact.
+            I help lean teams move from stuck to scaling with clear direction and fast execution.
           </p>
           
           <Button 
