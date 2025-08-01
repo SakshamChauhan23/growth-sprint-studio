@@ -2,7 +2,7 @@ import { Users, Target, Lightbulb, Rocket } from 'lucide-react';
 
 const WhySection = () => {
   return (
-    <section className="py-8 sm:py-12 lg:py-20 bg-gradient-to-br from-slate-50 to-white">
+    <section id="about" className="py-8 sm:py-12 lg:py-20 bg-gradient-to-br from-slate-50 to-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

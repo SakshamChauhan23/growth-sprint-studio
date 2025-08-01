@@ -27,12 +27,9 @@ const Footer = () => {
 
       {/* Footer Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
-          <div className="md:col-span-2">
-            <div className="bg-white text-slate-900 px-3 py-1 rounded-lg font-bold text-lg w-fit mb-4">
-              Logo
-            </div>
+          <div className="md:col-span-1">
             <p className="text-slate-300 mb-6 max-w-md">
               We help businesses scale with data-driven strategies, optimized funnels, and growth-focused solutions.
             </p>
