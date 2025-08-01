@@ -11,7 +11,7 @@ const WhySection = () => {
                   About Me
                 </h2>
                 <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                  I'm Saksham, a Product Manager turned growth strategist and automation specialist. I help lean teams overcome bottlenecks that prevent great ideas from becoming great products.
+                  I'm Saksham, and those early lessons shaped how I work today. Most teams don't need more people or bloated processes; they need sharper direction, better systems, and someone who bridges the gap between strategy and execution.
                 </p>
               </div>
               
@@ -30,9 +30,9 @@ const WhySection = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
-                    <h3 className="font-medium text-slate-900 mb-2">My journey started in lean startup teams</h3>
+                    <h3 className="font-medium text-slate-900 mb-2">It all started with Articuleren</h3>
                     <p className="text-slate-600 leading-relaxed">
-                      I watched ambitious, capable people struggle because roadmaps were unclear, manual tasks consumed entire days, and execution always felt just out of reach.
+                      It all started with Articuleren, my edtech initiative. I built it from scratch to help learners communicate better, and in the process, I wore every hat: product, content, design, and growth. That's where I first learned how to turn an idea into a working product, build a brand around it, and run campaigns that moved the needle.
                     </p>
                   </div>
                 </div>
@@ -40,9 +40,9 @@ const WhySection = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
-                    <h3 className="font-medium text-slate-900 mb-2">I started building systems to solve these problems</h3>
+                    <h3 className="font-medium text-slate-900 mb-2">I saw the same patterns repeat</h3>
                     <p className="text-slate-600 leading-relaxed">
-                      Instead of waiting for things to change, I mapped features, built simple automations, and created workflows that freed up time for actual growth work.
+                      Later, as I worked in other lean teams, I saw the same patterns repeat: great ideas stalled because of unclear roadmaps, manual busywork, and a lack of focus on execution.
                     </p>
                   </div>
                 </div>
@@ -50,9 +50,9 @@ const WhySection = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
-                    <h3 className="font-medium text-slate-900 mb-2">Now I partner with teams to do the same</h3>
+                    <h3 className="font-medium text-slate-900 mb-2">Now I partner with teams to deliver results</h3>
                     <p className="text-slate-600 leading-relaxed">
-                      Most teams don't need more people—they need focus, clarity, and someone who can turn strategy into action without the overhead.
+                      Instead of waiting, I started fixing these problems, mapping features, simplifying processes, and setting up systems that freed up time for real growth. Now, I partner with SaaS founders, e-commerce brands, agencies, and ops-heavy teams to do exactly that: deliver results without extra headcount or complexity.
                     </p>
                   </div>
                 </div>
@@ -61,8 +61,12 @@ const WhySection = () => {
             
             <div className="space-y-8">
               <div className="relative">
-                <div className="w-80 h-80 bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mx-auto flex items-center justify-center">
-                  <div className="text-6xl text-slate-400">👨‍💼</div>
+                <div className="w-80 h-80 rounded-lg mx-auto overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/9509828b-99de-44d4-adcd-c9f4b73c4e6e.png" 
+                    alt="Saksham speaking at an event" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               
