@@ -90,6 +90,32 @@ const RainesDevCaseStudy = () => {
           </div>
         </section>
 
+        {/* Website Preview */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="bg-purple-100 p-2 rounded-lg">
+              <Globe className="w-5 h-5 text-purple-600" />
+            </div>
+            <h3 className="text-xl font-bold text-slate-900">Website Preview</h3>
+          </div>
+          
+          <div className="bg-slate-50 rounded-xl p-6">
+            <p className="text-slate-700 mb-6">
+              The redesigned RainesDev website showcases their value proposition with a professional, data-driven approach to technical recruitment.
+            </p>
+            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-lg">
+              <img 
+                src="/lovable-uploads/1b7a86e9-603c-42d7-b0df-b439511f42aa.png" 
+                alt="RainesDev Website Preview"
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-slate-600 mt-4 text-center">
+              Clean, professional design emphasizing data-backed precision in technical hiring
+            </p>
+          </div>
+        </section>
+
         {/* Our Approach */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
