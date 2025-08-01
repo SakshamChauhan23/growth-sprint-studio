@@ -22,6 +22,16 @@ const CaseStudiesListing = () => {
       services: ["Brand Strategy", "Marketing Optimization", "E-commerce Funnel Setup", "Creative Campaigns"],
       results: "300+ orders shipped with 2x conversion rate improvement",
       slug: "/case-studies/strutish"
+    },
+    {
+      id: "rainesdev",
+      title: "RainesDev",
+      industry: "IT Staffing & Recruiting",
+      description: "Scaled an IT staffing firm through business planning, GTM strategy, website development, and digital transformation",
+      image: "/lovable-uploads/cd2b9933-b10a-49c2-ad8e-9b9f2fc20136.png",
+      services: ["Business Planning", "GTM Strategy", "Website Development", "Digital Transformation"],
+      results: "Complete digital transformation with automated recruitment workflows",
+      slug: "/case-studies/rainesdev"
     }
   ];
 
@@ -48,7 +58,11 @@ const CaseStudiesListing = () => {
           {caseStudies.map((study) => (
             <div key={study.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               {/* Company Logo */}
-              <div className={`px-6 py-8 ${study.id === 'socialripple' ? 'bg-gradient-to-r from-blue-600 to-blue-700' : 'bg-gradient-to-r from-slate-800 to-slate-900'}`}>
+              <div className={`px-6 py-8 ${
+                study.id === 'socialripple' ? 'bg-gradient-to-r from-blue-600 to-blue-700' : 
+                study.id === 'rainesdev' ? 'bg-gradient-to-r from-green-600 to-green-700' :
+                'bg-gradient-to-r from-slate-800 to-slate-900'
+              }`}>
                 <div className="bg-white rounded-lg p-3 w-fit">
                   <img 
                     src={study.image} 
