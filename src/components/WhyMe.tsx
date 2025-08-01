@@ -3,81 +3,140 @@ import { Check, X } from "lucide-react";
 
 const WhyMe = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-slate-900 text-white">
+    <section className="py-12 sm:py-16 lg:py-20 bg-foreground text-background">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16">
             Why work with{" "}
-            <span className="text-orange-500 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Saksham?</span>
+            <span className="text-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Saksham?</span>
           </h2>
           
-          {/* Mobile Card Layout */}
-          <div className="block lg:hidden space-y-4">
-            {/* Header Card */}
-            <div className="bg-orange-50 rounded-2xl p-4 border-2 border-orange-200">
-              <h3 className="text-xl font-bold text-orange-600 mb-2">Saksham's Approach</h3>
-              <p className="text-gray-700 text-sm">Direct, hands-on partnership focused on results</p>
-            </div>
-            
-            {/* Feature Cards */}
-            <div className="grid gap-3">
-              <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-green-500">
-                <div className="flex items-center justify-between">
-                  <span className="font-medium text-gray-900 text-sm">Direct, 1:1 Work</span>
-                  <Check className="h-5 w-5 text-green-500" />
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-green-500">
-                <div className="flex items-center justify-between">
-                  <span className="font-medium text-gray-900 text-sm">Fast Execution</span>
-                  <Check className="h-5 w-5 text-green-500" />
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-green-500">
-                <div className="flex items-center justify-between">
-                  <span className="font-medium text-gray-900 text-sm">Hands-on Implementation</span>
-                  <Check className="h-5 w-5 text-green-500" />
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-orange-500">
-                <div className="flex items-center justify-between">
-                  <span className="font-medium text-gray-900 text-sm">Clear Roadmaps</span>
-                  <div className="flex flex-col items-center">
-                    <Check className="h-5 w-5 text-green-500" />
-                    <span className="text-xs text-orange-600 font-medium">(Lean & Simple)</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-orange-500">
-                <div className="flex items-center justify-between">
-                  <span className="font-medium text-gray-900 text-sm">Custom-Tailored Solutions</span>
-                  <div className="flex flex-col items-center">
-                    <Check className="h-5 w-5 text-green-500" />
-                    <span className="text-xs text-orange-600 font-medium">(Team-specific)</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-orange-500">
-                <div className="flex items-center justify-between">
-                  <span className="font-medium text-gray-900 text-sm">Affordable & Lean</span>
-                  <div className="flex flex-col items-center">
-                    <Check className="h-5 w-5 text-green-500" />
-                    <span className="text-xs text-orange-600 font-medium">(No Overhead)</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl p-4 shadow-lg border-l-4 border-green-500">
-                <div className="flex items-center justify-between">
-                  <span className="font-medium text-gray-900 text-sm">Ongoing Support</span>
-                  <Check className="h-5 w-5 text-green-500" />
-                </div>
-              </div>
+          {/* Mobile Table Layout */}
+          <div className="block lg:hidden">
+            <div className="bg-card rounded-2xl p-4 shadow-lg overflow-x-auto">
+              <table className="w-full min-w-[600px] text-xs">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="text-left p-3 text-foreground font-semibold">Feature</th>
+                    <th className="text-center p-3 text-muted-foreground font-medium">Agencies</th>
+                    <th className="text-center p-3 text-secondary font-semibold bg-secondary/10 rounded-t-lg">Saksham</th>
+                    <th className="text-center p-3 text-muted-foreground font-medium">Consultants</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-border/50">
+                    <td className="p-3 text-foreground font-medium">Direct, 1:1 Work</td>
+                    <td className="p-3 text-center">
+                      <X className="h-4 w-4 text-destructive mx-auto" />
+                    </td>
+                    <td className="p-3 text-center bg-secondary/10">
+                      <Check className="h-4 w-4 text-primary mx-auto" />
+                    </td>
+                    <td className="p-3 text-center">
+                      <X className="h-4 w-4 text-destructive mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="p-3 text-foreground font-medium">Fast Execution</td>
+                    <td className="p-3 text-center">
+                      <X className="h-4 w-4 text-destructive mx-auto" />
+                    </td>
+                    <td className="p-3 text-center bg-secondary/10">
+                      <Check className="h-4 w-4 text-primary mx-auto" />
+                    </td>
+                    <td className="p-3 text-center">
+                      <X className="h-4 w-4 text-destructive mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="p-3 text-foreground font-medium">Hands-on Implementation</td>
+                    <td className="p-3 text-center">
+                      <X className="h-4 w-4 text-destructive mx-auto" />
+                    </td>
+                    <td className="p-3 text-center bg-secondary/10">
+                      <Check className="h-4 w-4 text-primary mx-auto" />
+                    </td>
+                    <td className="p-3 text-center">
+                      <X className="h-4 w-4 text-destructive mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="p-3 text-foreground font-medium">Clear Roadmaps</td>
+                    <td className="p-3 text-center">
+                      <div className="flex flex-col items-center">
+                        <Check className="h-4 w-4 text-primary mb-1" />
+                        <span className="text-xs text-muted-foreground">(Slow)</span>
+                      </div>
+                    </td>
+                    <td className="p-3 text-center bg-secondary/10">
+                      <div className="flex flex-col items-center">
+                        <Check className="h-4 w-4 text-primary mb-1" />
+                        <span className="text-xs text-secondary font-medium">(Lean & Simple)</span>
+                      </div>
+                    </td>
+                    <td className="p-3 text-center">
+                      <div className="flex flex-col items-center">
+                        <Check className="h-4 w-4 text-primary mb-1" />
+                        <span className="text-xs text-muted-foreground">(Theoretical)</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="p-3 text-foreground font-medium">Custom-Tailored Solutions</td>
+                    <td className="p-3 text-center">
+                      <div className="flex flex-col items-center">
+                        <X className="h-4 w-4 text-destructive mb-1" />
+                        <span className="text-xs text-muted-foreground">(One-size)</span>
+                      </div>
+                    </td>
+                    <td className="p-3 text-center bg-secondary/10">
+                      <div className="flex flex-col items-center">
+                        <Check className="h-4 w-4 text-primary mb-1" />
+                        <span className="text-xs text-secondary font-medium">(Team-specific)</span>
+                      </div>
+                    </td>
+                    <td className="p-3 text-center">
+                      <div className="flex flex-col items-center">
+                        <X className="h-4 w-4 text-destructive mb-1" />
+                        <span className="text-xs text-muted-foreground">(Generic)</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="p-3 text-foreground font-medium">Affordable & Lean</td>
+                    <td className="p-3 text-center">
+                      <div className="flex flex-col items-center">
+                        <X className="h-4 w-4 text-destructive mb-1" />
+                        <span className="text-xs text-muted-foreground">(High Retainer)</span>
+                      </div>
+                    </td>
+                    <td className="p-3 text-center bg-secondary/10">
+                      <div className="flex flex-col items-center">
+                        <Check className="h-4 w-4 text-primary mb-1" />
+                        <span className="text-xs text-secondary font-medium">(No Overhead)</span>
+                      </div>
+                    </td>
+                    <td className="p-3 text-center">
+                      <div className="flex flex-col items-center">
+                        <X className="h-4 w-4 text-destructive mb-1" />
+                        <span className="text-xs text-muted-foreground">(Hourly Fees)</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 text-foreground font-medium">Ongoing Support</td>
+                    <td className="p-3 text-center">
+                      <X className="h-4 w-4 text-destructive mx-auto" />
+                    </td>
+                    <td className="p-3 text-center bg-secondary/10 rounded-b-lg">
+                      <Check className="h-4 w-4 text-primary mx-auto" />
+                    </td>
+                    <td className="p-3 text-center">
+                      <X className="h-4 w-4 text-destructive mx-auto" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
@@ -210,8 +269,8 @@ const WhyMe = () => {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-orange-500 to-pink-600 p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl mt-8 lg:mt-12">
-            <blockquote className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-white text-center">
+          <div className="bg-gradient-to-r from-secondary to-primary p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl mt-8 lg:mt-12">
+            <blockquote className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-background text-center accent-text">
               "I don't just tell you what to do. I build it with you."
             </blockquote>
           </div>
