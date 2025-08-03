@@ -2,8 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useNavigate } from "react-router-dom";
+import Autoplay from "embla-carousel-autoplay";
 
 const Testimonials = () => {
+  const navigate = useNavigate();
   const testimonials = [
     {
       name: "Ant Evans",
@@ -45,6 +48,11 @@ const Testimonials = () => {
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+              }),
+            ]}
             className="w-full mb-12"
           >
             <CarouselContent className="ml-1">
@@ -74,7 +82,11 @@ const Testimonials = () => {
               "Each story started small: one roadmap, one funnel, one workflow and grew from there."
             </p>
             
-            <Button variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white">
+            <Button 
+              variant="outline" 
+              className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
+              onClick={() => navigate('/case-studies')}
+            >
               View Full Case Studies
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
