@@ -30,21 +30,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="md:col-span-1">
-            <p className="text-slate-300 mb-6 max-w-md">
-              We help businesses scale with data-driven strategies, optimized funnels, and growth-focused solutions.
-            </p>
             <div className="space-y-2">
               <div className="flex items-center gap-3 text-slate-300">
                 <Mail className="w-4 h-4" />
-                <span>hello@company.com</span>
+                <span>sakshamchauhan23@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-slate-300">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <div className="flex items-center gap-3 text-slate-300">
-                <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
+                <span>+919643851089</span>
               </div>
             </div>
           </div>
@@ -64,13 +57,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/about" className="text-slate-300 hover:text-white transition-colors">
+                <a href="#about" className="text-slate-300 hover:text-white transition-colors">
                   About
                 </a>
               </li>
               <li>
-                <a href="/services" className="text-slate-300 hover:text-white transition-colors">
-                  Services
+                <a href="#testimonials" className="text-slate-300 hover:text-white transition-colors">
+                  Testimonials
                 </a>
               </li>
             </ul>

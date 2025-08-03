@@ -1,23 +1,34 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Testimonials = () => {
-  const cases = [
+  const testimonials = [
     {
-      company: "SocialRipple",
-      type: "SaaS",
-      result: "From vague ideas to 200+ early users in 6 weeks without writing a line of code."
+      name: "Ant Evans",
+      role: "Agile Coach",
+      testimonial: "delivered what was needed, I'm a quick fashion and adapted to my refinement, highly recommended"
     },
     {
-      company: "RainesDev",
-      type: "Staffing",
-      result: "Manual candidate sourcing cut by 70% AI workflows freed their team to close faster."
+      name: "Sal Leone",
+      role: "RainesDev",
+      testimonial: "Saksham delivered an EXCEPTIONAL business plan with professionalism and insightful data analysis, exceeding all expectations. Highly recommend!"
     },
     {
-      company: "Strutish",
-      type: "E-com",
-      result: "Funnel conversion jumped from 1.5% → 2%, saving 15+ hrs/week in ops."
+      name: "Ananya Patel",
+      role: "Fluxware",
+      testimonial: "Saksham helped us replace clunky spreadsheets and manual follow-ups with automated workflows. He didn't just plan the transformation; he implemented it end-to-end, making our operations run smoother than ever."
+    },
+    {
+      name: "Rahul Suri",
+      role: "TrendLoom",
+      testimonial: "Saksham automated our client onboarding with AI, reducing manual work by 60% and freeing our team to focus on growth"
+    },
+    {
+      name: "Meera Joshi",
+      role: "EduPro",
+      testimonial: "Saksham rebuilt our lead nurturing from scratch, personalised email sequences, better timing, and cleaner tracking. Within six weeks, our dormant leads started converting, boosting our sales pipeline"
     }
   ];
 
@@ -29,22 +40,34 @@ const Testimonials = () => {
             Real stories, real results:
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {cases.map((case_item, index) => (
-              <div key={index} className="bg-slate-50 p-8 rounded-2xl border-l-4 border-orange-500 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-center mb-4">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
-                    ))}
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full mb-12"
+          >
+            <CarouselContent className="ml-1">
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="pl-1 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-slate-50 p-8 rounded-2xl border-l-4 border-orange-500 hover:shadow-lg transition-all duration-300 h-full">
+                    <div className="flex items-center mb-4">
+                      <div className="flex">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                        ))}
+                      </div>
+                      <span className="ml-2 text-sm text-slate-600">({testimonial.role})</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-4">{testimonial.name}</h3>
+                    <p className="text-slate-700 italic">"{testimonial.testimonial}"</p>
                   </div>
-                  <span className="ml-2 text-sm text-slate-600">({case_item.type})</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">{case_item.company}</h3>
-                <p className="text-slate-700 italic">"{case_item.result}"</p>
-              </div>
-            ))}
-          </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
           
           <div className="text-center">
             <p className="text-xl text-slate-700 mb-8">
