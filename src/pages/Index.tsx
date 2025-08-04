@@ -9,6 +9,8 @@ import WhyMe from "@/components/WhyMe";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import CTAButton from "@/components/CTAButton";
+import WhatIOffer from "@/components/WhatIOffer";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -21,7 +23,9 @@ const Index = () => {
       <WhoIWorkWith />
       <WhyMe />
       <CTAButton className="py-12 sm:py-16 bg-white" variant="secondary" />
+      <WhatIOffer />
       <Testimonials />
+      <ContactForm />
       <Footer />
     </div>
   );
