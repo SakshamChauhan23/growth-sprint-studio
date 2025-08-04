@@ -27,9 +27,9 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.path}
+                to={item.path}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive(item.path)
                     ? "text-slate-900 border-b-2 border-slate-900"
@@ -37,7 +37,7 @@ const Navbar = () => {
                 }`}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -64,9 +64,9 @@ const Navbar = () => {
           <div className="md:hidden border-t border-slate-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.path}
+                  to={item.path}
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-3 py-2 text-base font-medium transition-colors ${
                     isActive(item.path)
@@ -75,7 +75,7 @@ const Navbar = () => {
                   }`}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="px-3 py-2">
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white rounded-full font-medium">
