@@ -3,10 +3,10 @@ import { Check, X } from "lucide-react";
 
 const WhyMe = () => {
   return (
-    <section className="py-10 sm:py-16 lg:py-20 bg-slate-50 text-foreground">
+    <section className="py-8 sm:py-12 lg:py-16 bg-slate-50 text-foreground">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-10 text-foreground">
             Why work with{" "}
             <span className="text-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Saksham?</span>
           </h2>
@@ -290,7 +290,7 @@ const WhyMe = () => {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-secondary to-primary p-6 sm:p-6 lg:p-8 rounded-2xl shadow-2xl mt-8 lg:mt-12 mx-2 lg:mx-0">
+          <div className="bg-gradient-to-r from-secondary to-primary p-6 sm:p-6 lg:p-8 rounded-2xl shadow-2xl mt-6 lg:mt-8 mx-2 lg:mx-0">
             <blockquote className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-background text-center accent-text">
               "I don't just tell you what to do. I build it with you."
             </blockquote>

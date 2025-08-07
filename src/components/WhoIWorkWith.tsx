@@ -26,15 +26,15 @@ const WhoIWorkWith = () => {
   ];
 
   return (
-    <section className="py-10 sm:py-16 lg:py-20 bg-white">
+    <section className="py-8 sm:py-12 lg:py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8 text-center">
             If you see yourself in these stories,{" "}
             <span className="text-orange-500">we should talk:</span>
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {personas.map((persona, index) => (
               <div key={index} className="bg-slate-50 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 mx-2 sm:mx-0">
                 <div className="mb-6">{persona.icon}</div>

@@ -21,14 +21,14 @@ const WhatIDo = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-12 bg-slate-50">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8 text-center">
             Here's what happens when we work together:
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             {outcomes.map((outcome, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <div className="mb-4">{outcome.icon}</div>

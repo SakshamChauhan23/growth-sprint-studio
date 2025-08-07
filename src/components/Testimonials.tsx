@@ -36,7 +36,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-white">
+    <section id="testimonials" className="py-12 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 text-center">
@@ -53,7 +53,7 @@ const Testimonials = () => {
                 delay: 3000,
               }),
             ]}
-            className="w-full mb-12"
+            className="w-full mb-8"
           >
             <CarouselContent className="ml-1">
               {testimonials.map((testimonial, index) => (
@@ -78,7 +78,7 @@ const Testimonials = () => {
           </Carousel>
           
           <div className="text-center">
-            <p className="text-xl text-slate-700 mb-8">
+            <p className="text-xl text-slate-700 mb-6">
               "If you see yourself in these stories, we should talk."
             </p>
             

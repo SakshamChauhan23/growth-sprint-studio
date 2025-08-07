@@ -22,10 +22,10 @@ const Index = () => {
       <WhySection />
       <WhoIWorkWith />
       <WhatIDo />
-      <CTAButton className="py-12 sm:py-16 bg-slate-100" />
+      <CTAButton className="py-8 sm:py-12 bg-slate-100" />
       <WhatIOffer />
       <WhyMe />
-      <CTAButton className="py-12 sm:py-16 bg-white" variant="secondary" />
+      <CTAButton className="py-8 sm:py-12 bg-white" variant="secondary" />
       <Testimonials />
       <ContactForm />
       <Footer />

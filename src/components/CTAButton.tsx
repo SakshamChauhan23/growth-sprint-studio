@@ -15,7 +15,7 @@ const CTAButton = ({
   const isPrimary = variant === "primary";
   
   return (
-    <div className={`text-center pt-10 ${className}`}>
+    <div className={`text-center pt-6 ${className}`}>
       <Button 
         size="lg" 
         onClick={() => isPrimary ? document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) : window.open('https://calendar.app.google/ywS5j1UormyUYA8J7', '_blank')}

@@ -47,10 +47,10 @@ const WhatIOffer = () => {
   ];
 
   return (
-    <section id="what-i-offer" className="py-20 bg-white">
+    <section id="what-i-offer" className="py-12 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               What I Offer
             </h2>
@@ -59,7 +59,7 @@ const WhatIOffer = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10">
             {services.map((service, index) => (
               <Card 
                 key={index} 

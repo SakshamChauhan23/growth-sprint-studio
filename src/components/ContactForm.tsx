@@ -33,10 +33,10 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-slate-50">
+    <section id="contact" className="py-12 bg-slate-50">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               Let's Start Your Growth Journey
             </h2>

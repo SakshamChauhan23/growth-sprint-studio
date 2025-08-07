@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const WhySection = () => {
   return (
-    <section id="about" className="py-8 sm:py-12 lg:py-20 bg-gradient-to-br from-slate-50 to-white">
+    <section id="about" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-br from-slate-50 to-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <div className="text-center mb-6 sm:mb-8 lg:mb-10">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-slate-900 mb-4 lg:mb-6">
               About Me
             </h2>
@@ -17,7 +17,7 @@ const WhySection = () => {
           {/* Mobile Intro Text */}
 
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 mb-10 lg:mb-16 items-start">
+          <div className="grid lg:grid-cols-3 gap-6 lg:gap-6 mb-8 lg:mb-10 items-start">
             {/* Image Card */}
             <div className="lg:col-span-1 order-1 lg:order-1">
               <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-6 lg:p-8 h-full mx-2 lg:mx-0">
@@ -150,7 +150,7 @@ const WhySection = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-8">
             <Button 
               size="lg" 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
