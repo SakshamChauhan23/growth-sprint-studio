@@ -16,12 +16,12 @@ const WhySection = () => {
           {/* Mobile Intro Text */}
 
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 mb-10 lg:mb-16">
+          <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 mb-10 lg:mb-16 items-start">
             {/* Image Card */}
             <div className="lg:col-span-1 order-1 lg:order-1">
               <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-6 lg:p-8 h-full mx-2 lg:mx-0">
                 <div className="relative mb-4 lg:mb-6">
-                  <div className="w-full aspect-square rounded-xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50">
+                  <div className="w-full aspect-square rounded-xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 max-w-[250px] mx-auto">
                     <img 
                       src="/lovable-uploads/b2f89dab-e169-4505-a629-4530f5989b23.png" 
                       alt="Saksham speaking at an event" 
@@ -30,7 +30,7 @@ const WhySection = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl lg:text-2xl font-semibold text-slate-900 mb-2">Hi, I'm Saksham,</h3>
+                  <h3 className="text-lg lg:text-xl font-semibold text-slate-900 mb-2">Hi, I'm Saksham,</h3>
                   <p className="text-orange-600 font-medium mb-4 text-sm lg:text-base">Your Product & Growth partner</p>
                   <div className="grid grid-cols-2 gap-3 lg:gap-4">
                     <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-3 lg:p-4 border border-orange-200">
@@ -39,7 +39,7 @@ const WhySection = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg>
                       </div>
-                      <div className="text-lg lg:text-xl font-bold text-slate-900">150%</div>
+                      <div className="text-base lg:text-lg font-bold text-slate-900">150%</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Avg. Efficiency Increase</div>
                     </div>
                     <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-3 lg:p-4 border border-blue-200">
@@ -48,7 +48,7 @@ const WhySection = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <div className="text-lg lg:text-xl font-bold text-slate-900">2 Weeks</div>
+                      <div className="text-base lg:text-lg font-bold text-slate-900">2 Weeks</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Sprint Duration</div>
                     </div>
                     <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-3 lg:p-4 border border-green-200">
@@ -57,7 +57,7 @@ const WhySection = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                       </div>
-                      <div className="text-lg lg:text-xl font-bold text-slate-900">50+</div>
+                      <div className="text-base lg:text-lg font-bold text-slate-900">50+</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Teams Helped</div>
                     </div>
                     <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-3 lg:p-4 border border-purple-200">
@@ -66,7 +66,7 @@ const WhySection = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <div className="text-lg lg:text-xl font-bold text-slate-900">95%</div>
+                      <div className="text-base lg:text-lg font-bold text-slate-900">95%</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Success Rate</div>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ const WhySection = () => {
             </div>
 
             {/* Story Cards */}
-            <div className="lg:col-span-2 space-y-6 lg:space-y-6 order-2 lg:order-2">
+            <div className="lg:col-span-2 space-y-6 lg:space-y-6 order-2 lg:order-2 flex flex-col">
               {/* Desktop Intro Text */}
 
               <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-6 lg:p-6 border-l-4 border-orange-500 mx-2 lg:mx-0">
