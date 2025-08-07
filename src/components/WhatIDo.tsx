@@ -35,7 +35,7 @@ const WhatIDo = () => {
             {/* Left Content */}
             <div className="space-y-8">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                What I do for teams like yours
+                Be witness on the way to our goal step by step.
               </h2>
               
               <Button 
