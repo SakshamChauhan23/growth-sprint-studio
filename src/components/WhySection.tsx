@@ -1,4 +1,5 @@
-import { Users, Target, Lightbulb, Rocket } from 'lucide-react';
+import { Users, Target, Lightbulb, Rocket, ArrowRight } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const WhySection = () => {
   return (
@@ -146,6 +147,18 @@ const WhySection = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="text-center mt-12">
+            <Button 
+              size="lg" 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Start Your Growth Sprint
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </div>
       </div>

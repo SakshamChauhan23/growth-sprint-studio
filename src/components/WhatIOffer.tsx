@@ -89,6 +89,7 @@ const WhatIOffer = () => {
           <div className="text-center">
             <Button 
               size="lg" 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Start Your Growth Sprint

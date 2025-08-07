@@ -79,17 +79,28 @@ const Testimonials = () => {
           
           <div className="text-center">
             <p className="text-xl text-slate-700 mb-8">
-              "Each story started small: one roadmap, one funnel, one workflow and grew from there."
+              "If you see yourself in these stories, we should talk."
             </p>
             
-            <Button 
-              variant="outline" 
-              className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
-              onClick={() => navigate('/case-studies')}
-            >
-              View Full Case Studies
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <div className="space-y-4">
+              <Button 
+                size="lg" 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
+              >
+                Start Your Growth Sprint
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
+                onClick={() => navigate('/case-studies')}
+              >
+                View Full Case Studies
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
           </div>
         </div>
       </div>
