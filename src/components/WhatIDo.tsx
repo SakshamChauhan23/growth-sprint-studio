@@ -22,11 +22,11 @@ const WhatIDo = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
@@ -52,14 +52,14 @@ const WhatIDo = () => {
             {/* Right Timeline */}
             <div className="relative">
               {/* Connecting Line */}
-              <div className="absolute left-8 top-16 bottom-16 w-0.5 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600"></div>
+              <div className="absolute left-8 top-16 bottom-16 w-0.5 bg-gradient-to-b from-orange-400 via-orange-500 to-orange-600"></div>
               
               <div className="space-y-12">
                 {outcomes.map((outcome, index) => (
                   <div key={index} className="relative flex items-start space-x-6">
                     {/* Icon Container */}
                     <div className="relative z-10 flex-shrink-0">
-                      <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/30">
+                      <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center shadow-lg shadow-orange-500/30">
                         <div className="text-white">
                           {outcome.icon}
                         </div>
