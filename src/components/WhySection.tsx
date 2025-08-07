@@ -14,10 +14,6 @@ const WhySection = () => {
           </div>
 
           {/* Mobile Intro Text */}
-          <div className="lg:hidden mb-6 sm:mb-8">
-            <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-6 mx-2">
-            </div>
-          </div>
 
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 mb-10 lg:mb-16">
@@ -34,8 +30,8 @@ const WhySection = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl lg:text-2xl font-semibold text-slate-900 mb-2">Saksham</h3>
-                  <p className="text-orange-600 font-medium mb-4 text-sm lg:text-base">Hi, I'm Saksham, your Product & Growth partner</p>
+                  <h3 className="text-xl lg:text-2xl font-semibold text-slate-900 mb-2">Hi, I'm Saksham,</h3>
+                  <p className="text-orange-600 font-medium mb-4 text-sm lg:text-base">Your Product & Growth partner</p>
                   <div className="grid grid-cols-2 gap-3 lg:gap-4">
                     <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-3 lg:p-4 border border-orange-200">
                       <div className="flex items-center justify-center mb-1">
@@ -81,8 +77,6 @@ const WhySection = () => {
             {/* Story Cards */}
             <div className="lg:col-span-2 space-y-6 lg:space-y-6 order-2 lg:order-2">
               {/* Desktop Intro Text */}
-              <div className="hidden lg:block bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              </div>
 
               <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-6 lg:p-6 border-l-4 border-orange-500 mx-2 lg:mx-0">
                 <div className="flex items-start sm:items-center mb-4 lg:mb-4">

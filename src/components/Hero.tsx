@@ -34,7 +34,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-orange-500 text-orange-500 bg-white hover:bg-orange-500 hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
               onClick={() => window.location.href = '/case-studies'}
             >
               Case Studies
