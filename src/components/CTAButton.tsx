@@ -18,7 +18,7 @@ const CTAButton = ({
     <div className={`text-center pt-10 ${className}`}>
       <Button 
         size="lg" 
-        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+        onClick={() => isPrimary ? document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) : window.open('https://calendar.app.google/ywS5j1UormyUYA8J7', '_blank')}
         className={`${isPrimary 
           ? "bg-orange-500 hover:bg-orange-600" 
           : "bg-primary hover:bg-primary/90"
@@ -32,7 +32,7 @@ const CTAButton = ({
         ) : (
           <>
             <Calendar className="mr-3 h-6 w-6" />
-            Book Your 20-min Call
+            Book Your 60-min Call
           </>
         )}
       </Button>

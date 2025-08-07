@@ -13,10 +13,11 @@ const CTA = () => {
           
           <Button 
             size="lg" 
+            onClick={() => window.open('https://calendar.app.google/ywS5j1UormyUYA8J7', '_blank')}
             className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-6 text-xl font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
           >
             <Calendar className="mr-3 h-6 w-6" />
-            Book Your 20-min Call
+            Book Your 60-min Call
           </Button>
         </div>
       </div>

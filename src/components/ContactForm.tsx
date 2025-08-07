@@ -67,13 +67,14 @@ const ContactForm = () => {
                     Prefer a Quick Call?
                   </h3>
                   <p className="text-slate-700 mb-6">
-                    Book a 20-minute discovery call to discuss your goals and see how I can help accelerate your growth.
+                    Book a 60-minute discovery call to discuss your goals and see how I can help accelerate your growth.
                   </p>
                   <Button 
                     variant="outline" 
+                    onClick={() => window.open('https://calendar.app.google/ywS5j1UormyUYA8J7', '_blank')}
                     className="w-full border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
                   >
-                    Schedule Call
+                    Book Your 60-min Call
                   </Button>
                 </div>
               </CardContent>
