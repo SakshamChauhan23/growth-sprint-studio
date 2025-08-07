@@ -8,10 +8,10 @@ interface SEOProps {
 }
 
 export const SEOHead = ({ 
-  title = "Saksham | Building Products, Brands & Growth Systems",
-  description = "I work with lean teams to build products, automate workflows, and scale growth, with hands-on support for SaaS, e-commerce, and agency operators.",
-  keywords = "growth consultant, product strategy, MVP development, brand positioning, conversion optimization, AI automation, startup growth, business development",
-  image = "/lovable-uploads/b2f89dab-e169-4505-a629-4530f5989b23.png"
+  title = "Saksham Chauhan - Growth Sprint Studio | Transform Ideas into Products, Scale Businesses Fast",
+  description = "Expert growth consultant helping lean teams turn ideas into products and scale businesses. Specializing in MVP development, brand positioning, conversion optimization, and AI automation for startups and SMBs.",
+  keywords = "growth consultant, product strategy, MVP development, brand positioning, conversion optimization, AI automation, startup growth, business development, growth sprint, lean teams, SaaS growth",
+  image = "https://eeddf88f-39e9-4e25-8dc4-a11bffdaa8c7.lovableproject.com/lovable-uploads/b2f89dab-e169-4505-a629-4530f5989b23.png"
 }: SEOProps) => {
   useEffect(() => {
     // Update document title
