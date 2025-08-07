@@ -6,21 +6,21 @@ const Footer = () => {
     <footer className="bg-slate-900 text-white">
       {/* CTA Section */}
       <div className="border-b border-slate-800">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">
               Ready to Scale Your Business?
             </h2>
-            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-slate-300 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed">
               Let's discuss how we can help you achieve sustainable growth with data-driven strategies.
             </p>
             <Button 
               size="lg" 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
               Start Your 2-Week Growth Sprint
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
             </Button>
           </div>
         </div>
