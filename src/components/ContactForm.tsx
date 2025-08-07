@@ -1,36 +1,7 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, Send } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Mail, Phone } from "lucide-react";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", company: "", message: "" });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
@@ -51,11 +22,11 @@ const ContactForm = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Contact Methods */}
-            <div className="space-y-8">
+          <div className="flex justify-center">
+            <div className="max-w-2xl mx-auto space-y-8">
+              {/* Contact Methods */}
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
+                <h3 className="text-2xl font-bold text-white mb-6 text-center">Get In Touch</h3>
                 
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
@@ -82,10 +53,10 @@ const ContactForm = () => {
               
               {/* Quick Call CTA */}
               <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 shadow-2xl shadow-orange-500/20">
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4 text-center">
                   Prefer a Quick Call?
                 </h3>
-                <p className="text-orange-100 mb-6 leading-relaxed">
+                <p className="text-orange-100 mb-6 leading-relaxed text-center">
                   Book a 60-minute discovery call to discuss your goals and see how I can help accelerate your growth.
                 </p>
                 <Button 
@@ -96,66 +67,6 @@ const ContactForm = () => {
                   Book Your 60-min Call
                 </Button>
               </div>
-            </div>
-
-            {/* Contact Form */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Input
-                      type="text"
-                      name="name"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="bg-white/10 border-white/20 text-white placeholder:text-slate-400 focus:border-orange-500"
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="email"
-                      name="email"
-                      placeholder="Your Email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="bg-white/10 border-white/20 text-white placeholder:text-slate-400 focus:border-orange-500"
-                    />
-                  </div>
-                </div>
-                
-                <Input
-                  type="text"
-                  name="company"
-                  placeholder="Company Name (Optional)"
-                  value={formData.company}
-                  onChange={handleChange}
-                  className="bg-white/10 border-white/20 text-white placeholder:text-slate-400 focus:border-orange-500"
-                />
-                
-                <Textarea
-                  name="message"
-                  placeholder="Tell me about your project and goals..."
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={4}
-                  className="bg-white/10 border-white/20 text-white placeholder:text-slate-400 focus:border-orange-500"
-                />
-                
-                <Button 
-                  type="submit" 
-                  size="lg"
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 text-lg rounded-xl transition-all duration-300 transform hover:scale-105"
-                >
-                  <Send className="mr-2 h-5 w-5" />
-                  Send Message
-                </Button>
-              </form>
             </div>
           </div>
         </div>
