@@ -3,10 +3,16 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTAButton from "@/components/CTAButton";
+import { SEOHead } from "@/utils/seo";
 
 const CaseStudies = () => {
   return (
     <div className="min-h-screen bg-slate-50">
+      <SEOHead 
+        title="SocialRipple Case Study - HR-Tech Platform Growth Strategy | Growth Sprint Studio"
+        description="How we positioned SocialRipple as an early-stage HR-tech platform, generating 520+ waitlist sign-ups through strategic content-led growth and go-to-market strategy."
+        keywords="HR-tech, B2B SaaS, employee advocacy, product positioning, go-to-market strategy, content marketing, lead generation, SocialRipple"
+      />
       <Navbar />
       {/* Header */}
       <div className="bg-white border-b">

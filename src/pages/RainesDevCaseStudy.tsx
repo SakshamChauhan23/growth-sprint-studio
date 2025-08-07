@@ -3,10 +3,16 @@ import { Link } from "react-router-dom";
 import CTAButton from "@/components/CTAButton";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/utils/seo";
 
 const RainesDevCaseStudy = () => {
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead 
+        title="RainesDev Case Study - IT Staffing Digital Transformation | Growth Sprint Studio"
+        description="Complete digital transformation of RainesDev IT staffing firm through business planning, GTM strategy, website development, and automated recruitment workflows."
+        keywords="IT staffing, digital transformation, business planning, GTM strategy, website development, recruitment automation, RainesDev"
+      />
       <Navbar />
       {/* Header */}
       <div className="bg-white border-b">

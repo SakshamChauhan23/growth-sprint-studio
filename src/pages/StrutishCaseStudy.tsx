@@ -2,11 +2,17 @@ import { ArrowLeft, ExternalLink, Target, TrendingUp, Users, Zap } from "lucide-
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/utils/seo";
 import CTAButton from "@/components/CTAButton";
 
 const StrutishCaseStudy = () => {
   return (
     <div className="min-h-screen bg-slate-50">
+      <SEOHead 
+        title="Strutish Case Study - D2C Fashion Brand Growth | Growth Sprint Studio"
+        description="How we scaled Strutish, a D2C streetwear brand, by optimizing conversion funnels and targeting anime/meme culture enthusiasts. 300+ orders with 2x conversion improvement."
+        keywords="D2C fashion, streetwear, conversion optimization, e-commerce funnel, brand strategy, creative campaigns, Strutish"
+      />
       <Navbar />
       {/* Header */}
       <div className="bg-white border-b">

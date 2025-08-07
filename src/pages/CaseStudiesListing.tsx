@@ -2,6 +2,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/utils/seo";
 
 const CaseStudiesListing = () => {
   const caseStudies = [
@@ -41,6 +42,11 @@ const CaseStudiesListing = () => {
   
   return (
     <div className="min-h-screen bg-slate-50">
+      <SEOHead 
+        title="Case Studies - Growth Sprint Studio | Real Results for Real Businesses"
+        description="Explore how we've helped startups and SMBs achieve product-market fit, optimize growth funnels, and automate operations. SocialRipple, Strutish, RainesDev success stories."
+        keywords="case studies, startup growth, product strategy, conversion optimization, growth marketing, business automation, MVP development, brand positioning"
+      />
       <Navbar />
       {/* Header */}
       <div className="bg-white border-b">

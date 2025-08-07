@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SEOHead } from "@/utils/seo";
 
 const NotFound = () => {
   const location = useLocation();
@@ -15,6 +16,10 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead 
+        title="Page Not Found - Growth Sprint Studio"
+        description="The page you're looking for doesn't exist. Return to Growth Sprint Studio homepage for expert product strategy and growth consulting services."
+      />
       <Navbar />
       <div className="flex-1 flex items-center justify-center bg-gray-100">
         <div className="text-center">

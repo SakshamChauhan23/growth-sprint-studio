@@ -11,19 +11,21 @@ import CTA from "@/components/CTA";
 import CTAButton from "@/components/CTAButton";
 import WhatIOffer from "@/components/WhatIOffer";
 import ContactForm from "@/components/ContactForm";
+import { SEOHead } from "@/utils/seo";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead />
       <Navbar />
       <Hero />
       <WhySection />
+      <WhoIWorkWith />
       <WhatIDo />
       <CTAButton className="py-12 sm:py-16 bg-slate-100" />
-      <WhoIWorkWith />
+      <WhatIOffer />
       <WhyMe />
       <CTAButton className="py-12 sm:py-16 bg-white" variant="secondary" />
-      <WhatIOffer />
       <Testimonials />
       <ContactForm />
       <Footer />

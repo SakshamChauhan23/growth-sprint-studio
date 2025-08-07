@@ -10,8 +10,10 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/#about" },
+    { name: "What I Offer", path: "/#what-i-offer" },
     { name: "Case Studies", path: "/case-studies" },
     { name: "Testimonials", path: "/#testimonials" },
+    { name: "Contact Me", path: "/#contact" },
   ];
 
   const isActive = (path: string) => {
