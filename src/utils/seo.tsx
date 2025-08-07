@@ -8,8 +8,8 @@ interface SEOProps {
 }
 
 export const SEOHead = ({ 
-  title = "Saksham Chauhan - Growth Sprint Studio",
-  description = "Turn ideas into products, brands into growth. Expert product strategy, growth campaigns, and AI automation for lean teams.",
+  title = "Saksham | Building Products, Brands & Growth Systems",
+  description = "I work with lean teams to build products, automate workflows, and scale growth, with hands-on support for SaaS, e-commerce, and agency operators.",
   keywords = "growth consultant, product strategy, MVP development, brand positioning, conversion optimization, AI automation, startup growth, business development",
   image = "/lovable-uploads/b2f89dab-e169-4505-a629-4530f5989b23.png"
 }: SEOProps) => {

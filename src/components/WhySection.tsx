@@ -38,7 +38,7 @@ const WhySection = () => {
                 </div>
                 <div className="text-center">
                   <h3 className="text-xl lg:text-2xl font-semibold text-slate-900 mb-2">Saksham</h3>
-                  <p className="text-orange-600 font-medium mb-4 text-sm lg:text-base">Growth Strategist & Automation Specialist</p>
+                  <p className="text-orange-600 font-medium mb-4 text-sm lg:text-base">Hi, I'm Saksham, your Product & Growth partner</p>
                   <div className="grid grid-cols-2 gap-3 lg:gap-4">
                     <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-3 lg:p-4 border border-orange-200">
                       <div className="flex items-center justify-center mb-1">
@@ -46,7 +46,7 @@ const WhySection = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg>
                       </div>
-                      <div className="text-xl lg:text-2xl font-bold text-slate-900">150%</div>
+                      <div className="text-lg lg:text-xl font-bold text-slate-900">150%</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Avg. Efficiency Increase</div>
                     </div>
                     <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-3 lg:p-4 border border-blue-200">
@@ -55,7 +55,7 @@ const WhySection = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <div className="text-xl lg:text-2xl font-bold text-slate-900">2 Weeks</div>
+                      <div className="text-lg lg:text-xl font-bold text-slate-900">2 Weeks</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Sprint Duration</div>
                     </div>
                     <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-3 lg:p-4 border border-green-200">
@@ -64,7 +64,7 @@ const WhySection = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                       </div>
-                      <div className="text-xl lg:text-2xl font-bold text-slate-900">50+</div>
+                      <div className="text-lg lg:text-xl font-bold text-slate-900">50+</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Teams Helped</div>
                     </div>
                     <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-3 lg:p-4 border border-purple-200">
@@ -73,7 +73,7 @@ const WhySection = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <div className="text-xl lg:text-2xl font-bold text-slate-900">95%</div>
+                      <div className="text-lg lg:text-xl font-bold text-slate-900">95%</div>
                       <div className="text-xs text-slate-500 uppercase tracking-wide">Success Rate</div>
                     </div>
                   </div>

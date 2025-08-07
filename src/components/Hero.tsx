@@ -37,7 +37,7 @@ const Hero = () => {
               className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
               onClick={() => window.location.href = '/case-studies'}
             >
-              View Case Studies
+              Case Studies
             </Button>
           </div>
         </div>
