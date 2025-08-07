@@ -7,20 +7,17 @@ const WhatIDo = () => {
     {
       icon: <Rocket className="h-6 w-6" />,
       title: "Your idea becomes a product",
-      description: "We define your MVP, prioritise features, and validate fast.",
-      step: "Q1 / 2024"
+      description: "We define your MVP, prioritise features, and validate fast."
     },
     {
       icon: <TrendingUp className="h-6 w-6" />,
       title: "Your brand gets noticed", 
-      description: "I craft positioning, messaging, and content that build authority and trust.",
-      step: "Q2 / 2024"
+      description: "I craft positioning, messaging, and content that build authority and trust."
     },
     {
       icon: <Zap className="h-6 w-6" />,
       title: "Your growth engine runs itself",
-      description: "From funnel optimisation to AI-powered workflows, we eliminate manual bottlenecks so you can focus on scaling.",
-      step: "Q3 / 2024"
+      description: "From funnel optimisation to AI-powered workflows, we eliminate manual bottlenecks so you can focus on scaling."
     }
   ];
 
@@ -40,10 +37,6 @@ const WhatIDo = () => {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Be witness on the way to our goal step by step.
               </h2>
-              
-              <p className="text-lg text-slate-300 leading-relaxed max-w-lg">
-                BH Network is a team of freelancers and business owners who want to make a difference in the world of online marketplaces. We, too, have had enough of searching marketplaces for what we need and paying high fees to do so.
-              </p>
               
               <Button 
                 variant="outline" 
@@ -70,10 +63,6 @@ const WhatIDo = () => {
                         <div className="text-white">
                           {outcome.icon}
                         </div>
-                      </div>
-                      {/* Step Label */}
-                      <div className="absolute -top-2 -right-8 text-xs text-blue-300 font-medium whitespace-nowrap">
-                        {outcome.step}
                       </div>
                     </div>
                     
