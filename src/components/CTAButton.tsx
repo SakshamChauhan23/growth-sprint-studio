@@ -18,6 +18,7 @@ const CTAButton = ({
     <div className={`text-center pt-10 ${className}`}>
       <Button 
         size="lg" 
+        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
         className={`${isPrimary 
           ? "bg-orange-500 hover:bg-orange-600" 
           : "bg-primary hover:bg-primary/90"

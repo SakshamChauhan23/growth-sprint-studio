@@ -45,86 +45,24 @@ const ContactForm = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <Card className="shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-slate-900">Send a Message</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="flex justify-center">
+            <Card className="shadow-lg max-w-md">
+              <CardContent className="p-8">
+                <div className="flex items-center space-x-4 mb-4">
+                  <Mail className="h-6 w-6 text-orange-500" />
                   <div>
-                    <Input
-                      name="name"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full"
-                    />
+                    <h3 className="font-semibold text-slate-900">Email</h3>
+                    <p className="text-slate-700">sakshamchauhan23@gmail.com</p>
                   </div>
+                </div>
+                <div className="flex items-center space-x-4 mb-6">
+                  <Phone className="h-6 w-6 text-orange-500" />
                   <div>
-                    <Input
-                      name="email"
-                      type="email"
-                      placeholder="Your Email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full"
-                    />
+                    <h3 className="font-semibold text-slate-900">Phone</h3>
+                    <p className="text-slate-700">+919643851089</p>
                   </div>
-                  <div>
-                    <Input
-                      name="company"
-                      placeholder="Company Name (Optional)"
-                      value={formData.company}
-                      onChange={handleChange}
-                      className="w-full"
-                    />
-                  </div>
-                  <div>
-                    <Textarea
-                      name="message"
-                      placeholder="Tell me about your project and goals..."
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      className="w-full min-h-[120px]"
-                    />
-                  </div>
-                  <Button
-                    type="submit"
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-lg font-semibold"
-                  >
-                    <Send className="mr-2 h-5 w-5" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-
-            <div className="space-y-8">
-              <Card className="shadow-lg">
-                <CardContent className="p-8">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <Mail className="h-6 w-6 text-orange-500" />
-                    <div>
-                      <h3 className="font-semibold text-slate-900">Email</h3>
-                      <p className="text-slate-700">sakshamchauhan23@gmail.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <Phone className="h-6 w-6 text-orange-500" />
-                    <div>
-                      <h3 className="font-semibold text-slate-900">Phone</h3>
-                      <p className="text-slate-700">+919643851089</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-lg bg-gradient-to-br from-orange-50 to-orange-100">
-                <CardContent className="p-8">
+                </div>
+                <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-slate-900 mb-4">
                     Prefer a Quick Call?
                   </h3>
@@ -133,13 +71,13 @@ const ContactForm = () => {
                   </p>
                   <Button 
                     variant="outline" 
-                    className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
+                    className="w-full border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
                   >
                     Schedule Call
                   </Button>
-                </CardContent>
-              </Card>
-            </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
