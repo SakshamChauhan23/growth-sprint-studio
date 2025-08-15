@@ -2,6 +2,7 @@ import { ArrowLeft, ExternalLink, Target, TrendingUp, Users, Zap } from "lucide-
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ImageWithFallback from "@/components/ImageWithFallback";
 import { SEOHead } from "@/utils/seo";
 import CTAButton from "@/components/CTAButton";
 
@@ -36,10 +37,11 @@ const StrutishCaseStudy = () => {
           <div className="bg-gradient-to-r from-slate-800 to-slate-900 px-8 py-12">
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
               <div className="bg-white rounded-lg p-4 flex-shrink-0">
-                <img 
+                <ImageWithFallback
                   src="/lovable-uploads/b0aa9c0b-9905-4b39-af7c-5ad9a9f4aa34.png" 
                   alt="Strutish Logo"
                   className="h-12 w-auto"
+                  loading="eager"
                 />
               </div>
               <div className="text-white">

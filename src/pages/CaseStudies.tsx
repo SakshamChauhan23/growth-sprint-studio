@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTAButton from "@/components/CTAButton";
+import ImageWithFallback from "@/components/ImageWithFallback";
 import { SEOHead } from "@/utils/seo";
 
 const CaseStudies = () => {
@@ -36,10 +37,11 @@ const CaseStudies = () => {
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-12">
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
               <div className="bg-white rounded-lg p-4 flex-shrink-0">
-                <img 
+                <ImageWithFallback
                   src="/lovable-uploads/9c78e6dd-dc89-4095-ac6b-531b60f1e1b8.png" 
                   alt="SocialRipple Logo"
                   className="h-12 w-auto"
+                  loading="eager"
                 />
               </div>
               <div className="text-white">
@@ -92,7 +94,7 @@ const CaseStudies = () => {
             {/* Dashboard Preview */}
             <section className="mb-12">
               <div className="rounded-xl overflow-hidden shadow-lg">
-                <img 
+                <ImageWithFallback
                   src="/lovable-uploads/b1372160-9e1e-467d-8566-04fee9e3ab67.png" 
                   alt="SocialRipple Dashboard Preview"
                   className="w-full h-auto"

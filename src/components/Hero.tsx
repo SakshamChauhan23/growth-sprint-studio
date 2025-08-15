@@ -1,8 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="h-screen max-h-[800px] flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-50" style={{
@@ -35,7 +38,7 @@ const Hero = () => {
               size="lg" 
               variant="outline"
               className="border-2 border-orange-500 text-orange-500 bg-white hover:bg-orange-500 hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.location.href = '/case-studies'}
+              onClick={() => navigate('/case-studies')}
             >
               Case Studies
             </Button>

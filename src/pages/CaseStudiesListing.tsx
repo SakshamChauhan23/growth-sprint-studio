@@ -2,6 +2,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ImageWithFallback from "@/components/ImageWithFallback";
 import { SEOHead } from "@/utils/seo";
 
 const CaseStudiesListing = () => {
@@ -75,10 +76,11 @@ const CaseStudiesListing = () => {
                 'bg-gradient-to-r from-slate-800 to-slate-900'
               }`}>
                 <div className="bg-white rounded-lg p-3 w-fit">
-                  <img 
+                  <ImageWithFallback
                     src={study.image} 
                     alt={`${study.title} Logo`}
                     className="h-8 w-auto"
+                    loading="lazy"
                   />
                 </div>
               </div>

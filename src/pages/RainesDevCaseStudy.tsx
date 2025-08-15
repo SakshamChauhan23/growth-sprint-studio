@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import CTAButton from "@/components/CTAButton";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ImageWithFallback from "@/components/ImageWithFallback";
 import { SEOHead } from "@/utils/seo";
 
 const RainesDevCaseStudy = () => {
@@ -34,10 +35,11 @@ const RainesDevCaseStudy = () => {
         <div className="mb-12">
           <div className="flex items-center gap-6 mb-6">
             <div className="bg-slate-50 rounded-xl p-4">
-              <img 
+              <ImageWithFallback
                 src="/lovable-uploads/cd2b9933-b10a-49c2-ad8e-9b9f2fc20136.png" 
                 alt="RainesDev Logo" 
                 className="h-8 w-auto"
+                loading="eager"
               />
             </div>
             <div>
@@ -113,7 +115,7 @@ const RainesDevCaseStudy = () => {
               The redesigned RainesDev website showcases their value proposition with a professional, data-driven approach to technical recruitment.
             </p>
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-lg">
-              <img 
+              <ImageWithFallback
                 src="/lovable-uploads/1b7a86e9-603c-42d7-b0df-b439511f42aa.png" 
                 alt="RainesDev Website Preview"
                 className="w-full h-auto"
