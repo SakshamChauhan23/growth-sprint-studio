@@ -10,9 +10,9 @@ const RainesDevCaseStudy = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead 
-        title="RainesDev Case Study - IT Staffing Digital Transformation | Growth Sprint Studio"
-        description="Complete digital transformation of RainesDev IT staffing firm through business planning, GTM strategy, website development, and automated recruitment workflows."
-        keywords="IT staffing, digital transformation, business planning, GTM strategy, website development, recruitment automation, RainesDev"
+        title="RainesDev Case Study - Growth Sprint Studio | Development Agency Growth"
+        description="Learn how we helped RainesDev scale their development agency through strategic positioning, client acquisition optimization, and business process automation."
+        keywords="RainesDev, development agency, business scaling, client acquisition, case study"
       />
       <Navbar />
       {/* Header */}
@@ -298,9 +298,9 @@ const RainesDevCaseStudy = () => {
           variant="primary"
           text="Start Your Growth Sprint"
         />
-      </div>
-      <Footer />
     </div>
+    <Footer />
+  </div>
   );
 };
 

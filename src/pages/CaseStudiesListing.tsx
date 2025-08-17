@@ -42,15 +42,15 @@ const CaseStudiesListing = () => {
   console.log("CaseStudiesListing component is rendering");
   
   return (
-    <div className="min-h-screen bg-slate-50">
-      <SEOHead 
-        title="Case Studies - Growth Sprint Studio | Real Results for Real Businesses"
-        description="Explore how we've helped startups and SMBs achieve product-market fit, optimize growth funnels, and automate operations. SocialRipple, Strutish, RainesDev success stories."
-        keywords="case studies, startup growth, product strategy, conversion optimization, growth marketing, business automation, MVP development, brand positioning"
+    <main className="min-h-screen bg-slate-50">
+      <SEOHead
+        title="Case Studies - Growth Sprint Studio | Client Success Stories"
+        description="Explore our client success stories. See how we've helped startups and SMBs transform ideas into products, scale businesses, and achieve growth through strategic consulting and AI automation."
+        keywords="case studies, client success stories, startup growth, business transformation, MVP development case studies, growth consulting results"
       />
       <Navbar />
       {/* Header */}
-      <div className="bg-white border-b">
+      <section className="bg-white border-b">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Link 
             to="/" 
@@ -62,13 +62,13 @@ const CaseStudiesListing = () => {
           <h1 className="text-3xl lg:text-4xl font-bold text-slate-900">Case Studies</h1>
           <p className="text-lg text-slate-600 mt-2">Real results from real partnerships</p>
         </div>
-      </div>
+      </section>
 
       {/* Case Studies Grid */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((study) => (
-            <div key={study.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <article key={study.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               {/* Company Logo */}
               <div className={`px-6 py-8 ${
                 study.id === 'socialripple' ? 'bg-gradient-to-r from-blue-600 to-blue-700' : 
@@ -87,7 +87,7 @@ const CaseStudiesListing = () => {
 
               <div className="p-6">
                 {/* Title and Industry */}
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{study.title}</h3>
+                <h2 className="text-xl font-bold text-slate-900 mb-2">{study.title}</h2>
                 <p className="text-sm text-slate-600 mb-4">{study.industry}</p>
 
                 {/* Description */}
@@ -95,7 +95,7 @@ const CaseStudiesListing = () => {
 
                 {/* Services */}
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-slate-900 mb-2">Services:</h4>
+                  <h3 className="text-sm font-semibold text-slate-900 mb-2">Services:</h3>
                   <div className="flex flex-wrap gap-1">
                     {study.services.slice(0, 3).map((service) => (
                       <span key={service} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">
@@ -119,12 +119,12 @@ const CaseStudiesListing = () => {
                   <ExternalLink className="ml-2 w-4 h-4" />
                 </Link>
               </div>
-            </div>
+            </article>
           ))}
 
           {/* Placeholder cards for future case studies */}
           {[1].map((index) => (
-            <div key={`placeholder-${index}`} className="bg-white rounded-2xl shadow-lg overflow-hidden opacity-50">
+            <article key={`placeholder-${index}`} className="bg-white rounded-2xl shadow-lg overflow-hidden opacity-50">
               <div className="bg-gradient-to-r from-slate-400 to-slate-500 px-6 py-8">
                 <div className="bg-white rounded-lg p-3 w-fit">
                   <div className="h-8 w-16 bg-slate-200 rounded"></div>
@@ -142,7 +142,7 @@ const CaseStudiesListing = () => {
                 <div className="h-4 bg-slate-100 rounded mb-6"></div>
                 <div className="h-10 bg-slate-200 rounded"></div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
@@ -150,9 +150,9 @@ const CaseStudiesListing = () => {
         <div className="text-center mt-12">
           <p className="text-slate-600">More case studies coming soon...</p>
         </div>
-      </div>
+      </section>
       <Footer />
-    </div>
+    </main>
   );
 };
 
