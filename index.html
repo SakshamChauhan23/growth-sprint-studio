@@ -59,8 +59,44 @@
 
   <body>
     <div id="root"></div>
+    <noscript>
+      <style>
+        .ssg-container{max-width:860px;margin:2rem auto;padding:1rem 1.25rem;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:#0f172a}
+        .ssg-muted{color:#475569}
+        .ssg-cta a{display:inline-block;margin:.5rem .5rem 0 0;padding:.6rem 1rem;border-radius:.5rem;background:#0f172a;color:#fff;text-decoration:none}
+        .ssg-card{border:1px solid #e2e8f0;border-radius:12px;padding:1rem;margin:1rem 0}
+        .ssg-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+        .ssg-link{color:#0f172a}
+      </style>
+      <div class="ssg-container" role="article">
+        <header>
+          <h1>Growth Sprint Studio — Turn ideas into products. Brands into growth.</h1>
+          <p class="ssg-muted">Expert growth consulting for startups and SMBs: MVP development, brand positioning, conversion optimization, and AI automation.</p>
+          <div class="ssg-cta">
+            <a href="/case-studies" class="ssg-link">View Case Studies</a>
+            <a href="/" class="ssg-link">Start Your Growth Sprint</a>
+          </div>
+        </header>
+        <section>
+          <h2>Case Studies</h2>
+          <div class="ssg-list">
+            <article class="ssg-card">
+              <h3><a href="/case-studies/socialripple" class="ssg-link">SocialRipple — HR-Tech Platform</a></h3>
+              <p class="ssg-muted">Positioning an early-stage HR-tech platform and building content-led growth. Result: 520+ waitlist sign-ups.</p>
+            </article>
+            <article class="ssg-card">
+              <h3><a href="/case-studies/strutish" class="ssg-link">Strutish — D2C Streetwear</a></h3>
+              <p class="ssg-muted">Niche positioning and funnel optimization for anime-meets-streetwear. Result: 2x conversion rate, 300+ orders.</p>
+            </article>
+            <article class="ssg-card">
+              <h3><a href="/case-studies/rainesdev" class="ssg-link">RainesDev — IT Staffing & Recruiting</a></h3>
+              <p class="ssg-muted">Business planning, GTM, website redesign, and automation. Result: stronger digital presence and faster placements.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
-    
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
