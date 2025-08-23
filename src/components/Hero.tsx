@@ -22,7 +22,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 mb-6 max-w-3xl mx-auto leading-relaxed">
-            I help lean teams turn messy roadmaps and stalled growth into products shipped and results delivered fast.
+            I work with lean teams to turn messy roadmaps and stalled growth into products shipped and results delivered fast.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
