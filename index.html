@@ -178,13 +178,35 @@
       .leading-tight { line-height: 1.25; }
       .leading-relaxed { line-height: 1.625; }
       
-      /* Critical gradient text styling for LCP */
+      /* Critical H1 and gradient text styling for LCP optimization */
+      .text-4xl { font-size: 2.25rem; line-height: 1.25; }
+      .md\:text-5xl { font-size: 2.25rem; line-height: 1.25; }
+      .lg\:text-7xl { font-size: 2.25rem; line-height: 1.25; }
+      
       .gradient-text {
         background: linear-gradient(to right, #fb923c, #ec4899);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
+      }
+      
+      /* Critical H1 element complete styling */
+      h1.text-4xl {
+        font-size: 2.25rem;
+        line-height: 1.25;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      
+      h1 span.gradient-text,
+      h1 .bg-gradient-to-r {
+        background: linear-gradient(to right, #fb923c, #ec4899);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        display: inline;
       }
       
       /* Critical image styling for LCP */
@@ -228,13 +250,15 @@
       
       @media (min-width: 768px) {
         .py-20 { padding-top: 8rem; padding-bottom: 8rem; }
-        .text-4xl { font-size: 3rem; line-height: 1; }
+        .text-4xl, .md\:text-5xl { font-size: 3rem; line-height: 1; }
         .text-xl { font-size: 1.5rem; line-height: 2rem; }
+        h1.text-4xl { font-size: 3rem; line-height: 1; }
       }
       
       @media (min-width: 1024px) {
-        .text-4xl { font-size: 4.5rem; line-height: 1; }
+        .text-4xl, .lg\:text-7xl { font-size: 4.5rem; line-height: 1; }
         .text-xl { font-size: 1.5rem; line-height: 2rem; }
+        h1.text-4xl { font-size: 4.5rem; line-height: 1; }
       }
     </style>
     
