@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { smoothScrollTo } from "@/utils/scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,10 +26,7 @@ const Navbar = () => {
   const handleNavClick = (path: string) => {
     if (path.startsWith('/#')) {
       const sectionId = path.substring(2); // Remove '/#'
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      smoothScrollTo(sectionId);
     } else {
       window.location.href = path;
     }

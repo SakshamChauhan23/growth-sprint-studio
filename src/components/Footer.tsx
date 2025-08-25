@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+import { smoothScrollTo } from "@/utils/scroll";
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
             </p>
             <Button 
               size="lg" 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => smoothScrollTo('contact')}
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
               Start Your 2-Week Growth Sprint

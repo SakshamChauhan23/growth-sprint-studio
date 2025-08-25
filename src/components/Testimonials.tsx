@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useNavigate } from "react-router-dom";
+import { smoothScrollTo } from "@/utils/scroll";
 
 const Testimonials = () => {
   const navigate = useNavigate();
@@ -79,7 +80,7 @@ const Testimonials = () => {
             <div className="space-y-4">
               <Button 
                 size="lg" 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => smoothScrollTo('contact')}
                 className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
               >
                 Start Your Growth Sprint

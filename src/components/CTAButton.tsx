@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
+import { smoothScrollTo } from "@/utils/scroll";
 
 interface CTAButtonProps {
   variant?: "primary" | "secondary";
@@ -18,7 +19,7 @@ const CTAButton = ({
     <div className={`text-center pt-6 ${className}`}>
       <Button 
         size="lg" 
-        onClick={() => isPrimary ? document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) : window.open('https://calendar.app.google/ywS5j1UormyUYA8J7', '_blank')}
+        onClick={() => isPrimary ? smoothScrollTo('contact') : window.open('https://calendar.app.google/ywS5j1UormyUYA8J7', '_blank')}
         className={`${isPrimary 
           ? "bg-orange-500 hover:bg-orange-600" 
           : "bg-primary hover:bg-primary/90"

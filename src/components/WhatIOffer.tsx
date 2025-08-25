@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Lightbulb, Megaphone, TrendingUp, Zap } from "lucide-react";
+import { smoothScrollTo } from "@/utils/scroll";
 
 const WhatIOffer = () => {
   const services = [
@@ -89,7 +90,7 @@ const WhatIOffer = () => {
           <div className="text-center">
             <Button 
               size="lg" 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => smoothScrollTo('contact')}
               className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Start Your Growth Sprint

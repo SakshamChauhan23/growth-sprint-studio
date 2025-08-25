@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { smoothScrollTo } from "@/utils/scroll";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => smoothScrollTo('contact')}
             >
               Start Your Growth Sprint
               <ArrowRight className="ml-2 h-5 w-5" />

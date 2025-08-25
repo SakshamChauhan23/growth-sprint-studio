@@ -1,5 +1,6 @@
 import { Users, Target, Lightbulb, Rocket, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { smoothScrollTo } from "@/utils/scroll";
 
 const WhySection = () => {
   return (
@@ -153,7 +154,7 @@ const WhySection = () => {
           <div className="text-center mt-8">
             <Button 
               size="lg" 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => smoothScrollTo('contact')}
               className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Start Your Growth Sprint

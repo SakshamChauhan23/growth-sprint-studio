@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Rocket, TrendingUp, Zap, ArrowDown } from "lucide-react";
 import TimelineItem from "@/components/ui/timeline-item";
+import { smoothScrollTo } from "@/utils/scroll";
 
 const WhatIDo = () => {
   const outcomes = [
@@ -43,7 +44,7 @@ const WhatIDo = () => {
                 variant="outline" 
                 size="lg"
                 className="bg-transparent border-white/30 text-white hover:bg-white/10 px-8 py-3 rounded-lg transition-all duration-300"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => smoothScrollTo('contact')}
               >
                 More Information
                 <ArrowDown className="ml-2 h-4 w-4" />
