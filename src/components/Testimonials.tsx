@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useNavigate } from "react-router-dom";
-import Autoplay from "embla-carousel-autoplay";
 
 const Testimonials = () => {
   const navigate = useNavigate();
@@ -48,11 +47,6 @@ const Testimonials = () => {
               align: "start",
               loop: true,
             }}
-            plugins={[
-              Autoplay({
-                delay: 3000,
-              }),
-            ]}
             className="w-full mb-8"
           >
             <CarouselContent className="ml-1">

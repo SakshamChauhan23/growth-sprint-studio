@@ -21,10 +21,11 @@
     <meta name="keywords" content="growth consultant, product strategy, MVP development, brand positioning, conversion optimization, AI automation, startup growth, business development, growth sprint, lean teams, SaaS growth" />
     <link rel="icon" href="/lovable-uploads/b2f89dab-e169-4505-a629-4530f5989b23.png" type="image/png">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Optimized for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -51,6 +52,27 @@
     <!-- Preload critical resources -->
     <link rel="preload" as="script" href="/src/main.tsx" />
     <link rel="preload" as="style" href="/src/index.css" />
+    
+    <!-- Critical CSS inlined for above-the-fold content -->
+    <style>
+      /* Critical above-the-fold styles */
+      body { margin: 0; padding: 0; font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .min-h-screen { min-height: 100vh; }
+      #root { min-height: 100vh; }
+      
+      /* Hero section critical styles */
+      .hero-gradient { 
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #020617 100%);
+      }
+      .text-white { color: white; }
+      .text-center { text-align: center; }
+      .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+      .px-4 { padding-left: 1rem; padding-right: 1rem; }
+      
+      @media (min-width: 768px) {
+        .py-20 { padding-top: 8rem; padding-bottom: 8rem; }
+      }
+    </style>
     
     <!-- DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
