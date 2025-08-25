@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DNNH8BF7M"></script>
+    <!-- Deferred Google Analytics to reduce unused JS blocking initial render -->
     <script>
+      // Initialize Google Analytics with deferred loading
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-5DNNH8BF7M');
+      
+      // Defer Google Analytics script loading until after critical resources
+      function loadGoogleAnalytics() {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-5DNNH8BF7M';
+        document.head.appendChild(script);
+      }
+      
+      // Load GA after initial render is complete
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          setTimeout(loadGoogleAnalytics, 1000); // 1s delay for critical render path
+        });
+      } else {
+        setTimeout(loadGoogleAnalytics, 1000);
+      }
     </script>
     
     <meta charset="UTF-8" />
