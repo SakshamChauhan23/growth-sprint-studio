@@ -30,9 +30,7 @@
     <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v43/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
     
-    <!-- Load font CSS with lower priority after critical fonts are preloaded -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+    <!-- Google Fonts CSS removed since we have complete inlined font-face declarations -->
     
     <!-- Inline critical font-face declarations with preloaded fonts -->
     <style>
@@ -103,7 +101,7 @@
     
     <!-- Preload critical resources -->
     <link rel="preload" as="script" href="/src/main.tsx" />
-    <link rel="preload" as="style" href="/src/index.css" />
+    <!-- Main CSS will be loaded asynchronously to prevent render blocking -->
     
     <!-- Expanded Critical CSS to minimize render blocking -->
     <style>
@@ -181,6 +179,29 @@
 
   <body>
     <div id="root"></div>
+    
+    <!-- Load main CSS asynchronously to eliminate render blocking -->
+    <script>
+      // Async CSS loading function to prevent render blocking
+      function loadCSS(href) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        link.media = 'print';
+        link.onload = function() { this.media = 'all'; };
+        document.head.appendChild(link);
+      }
+      
+      // Load main CSS after DOM is ready but before render blocking
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          loadCSS('/src/index.css');
+        });
+      } else {
+        loadCSS('/src/index.css');
+      }
+    </script>
+    
     <script type="module" src="/src/main.tsx"></script>
     
     <!-- Structured Data for SEO -->
